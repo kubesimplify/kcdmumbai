@@ -37,7 +37,7 @@ const hackathon = {
       name: "Rohit Ghumare",
       imageUrl: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_face,h_130,q_auto:good,w_130/v1/gcs/platform-data-cncf/avatars/rohit_ghumare.jpg",
       profession: "Develoeper Advocate",
-      company: null,
+      company: 'Solo.io',
     },
   ],
   sponsors: {
