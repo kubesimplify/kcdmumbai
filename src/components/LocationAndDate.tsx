@@ -19,15 +19,15 @@ const LocationAndDate = () => {
               className="rounded-t-xl"
             />
             <p className="bg-[#ffffff] py-1 font-semibold text-main-color ">
-              Grand Hyatt Mumbai
+              Mumbai
             </p>
           </div>
         </div>
         <div className="flex flex-col gap-2 px-4 md:w-1/2">
           <h1>
-            KCD Mumbai will be held at the prestigious Grand Hyatt Mumbai. With
-            over 350 attendees, this will be one of the largest events for
-            cloud-native in Mumbai with a focus on open source and community.
+            KCD Mumbai will be held in Mumbai. With over 350 attendees, this
+            will be one of the largest events for cloud-native in Mumbai with a
+            focus on open source and community.
           </h1>
           <h1>
             We will provide the safest possible hybrid event and follow all the

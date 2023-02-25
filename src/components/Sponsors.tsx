@@ -66,7 +66,7 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
     return (
       <div
         className={`flex items-center justify-center ${
-          hackathon.blur.sponsors && 'blur-[7px]'
+          hackathon.blur.sponsors && 'blur-lg'
         }`}
       >
         {sponsorLogo}
@@ -79,7 +79,7 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
     return (
       <div
         className={`flex items-center justify-center ${
-          hackathon.blur.sponsors && 'blur-[7px]'
+          hackathon.blur.sponsors && 'blur-lg'
         }`}
       >
         <Image

@@ -17,12 +17,12 @@ const hackathon = {
     slack: null,
   },
   email: "contact@kcdmumbai.com",
-  location: 'Grand Hyatt Mumbai',
+  location: 'Mumbai',
   date: 'June 10th, 2023',
   aboutUs: 'Join us at Kubernetes Community Days in Mumbai to experience the power of a diverse community coming together to learn & share knowledge on cloud native.',
   blur: {
     sponsors: true,
-    speakers: true,
+    speakers: false,
   },
   speakers: [
     {
@@ -37,7 +37,7 @@ const hackathon = {
       name: "Rohit Ghumare",
       imageUrl: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_face,h_130,q_auto:good,w_130/v1/gcs/platform-data-cncf/avatars/rohit_ghumare.jpg",
       profession: "Develoeper Advocate",
-      company: "Comapany",
+      company: null,
     },
   ],
   sponsors: {

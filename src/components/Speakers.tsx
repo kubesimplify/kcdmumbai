@@ -8,19 +8,19 @@ import hackathon from '@data/index';
 const Speakers = () => {
   return (
     <SectionWrapper id="speakers" className="mx-3">
-      <Heading>Speakers</Heading>
-      <div className="flex flex-wrap items-center justify-center gap-5">
+      <Heading>Organizers</Heading>
+      <div className="flex flex-wrap items-start justify-center gap-5">
         {hackathon.speakers.map((person) => (
           <div
             key={person.id}
-            className={`flex flex-col items-center justify-center rounded-xl shadow-xl ${
+            className={`flex flex-col items-center justify-center rounded-xl shadow-lg ${
               hackathon.blur.speakers && 'blur-sm'
             }`}
           >
             <Image
               src={person.imageUrl}
               alt="sponserImg"
-              className="rounded-lg"
+              className="mb-1 rounded-lg"
               width={204}
               height={240}
             />
