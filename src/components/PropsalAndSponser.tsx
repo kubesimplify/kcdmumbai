@@ -26,7 +26,11 @@ const PropsalAndSponsors = () => {
             becoming a sponsor, contact us at{' '}
             <a href={`mailto:${hackathon.email}`}>{hackathon.email}</a>.
           </p>
-          <Button className="whitespace-nowrap">
+          <Button
+            className="whitespace-nowrap"
+            href="/KCD_Mumbai.pdf"
+            rel="noopener noreferrer"
+          >
             Sponsorship Prospectus {ProspectusIcon}
           </Button>
         </div>
