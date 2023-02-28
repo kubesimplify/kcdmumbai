@@ -25,7 +25,7 @@ const PropsalAndSponsors = () => {
           <p className="text-justify text-main-color sm:text-left">
             KCD is a community-organized and not-for-profit event and would not
             be possible without our partners. If you&apos;re interested in
-            becoming a sponsor, contact us at{' '}
+            becoming a sponsor, contact us at {' '}
             <a href={`mailto:${hackathon.email}`}>{hackathon.email}</a>.
           </p>
           <Button
