@@ -18,7 +18,7 @@ const hackathon = {
   },
   email: "contact@kcdmumbai.com",
   location: 'Mumbai',
-  date: 'June 10th, 2023',
+  date: 'June 17th, 2023',
   aboutUs: 'Join us at Kubernetes Community Days in Mumbai to experience the power of a diverse community coming together to learn & share knowledge on cloud native.',
   blur: {
     sponsors: true,
