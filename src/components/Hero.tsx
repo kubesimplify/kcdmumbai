@@ -7,7 +7,7 @@ import { TicketLogo } from '@assets/icon';
 
 const Hero = () => {
   return (
-    <div className="mx-3 flex flex-col pt-5 md:flex-row md:pt-28">
+    <div className="mx-3 flex flex-col gap-3 pt-5 md:flex-row md:pt-28">
       <div className="flex flex-col gap-5 md:w-1/2">
         <p className="-ml-2 w-max whitespace-nowrap rounded-lg bg-main-color p-2 text-white sm:ml-0">
           {hackathon?.date}
@@ -32,7 +32,11 @@ const Hero = () => {
         </Button>
       </div>
       <div className="md:w-1/2">
-        <Image src={hero} alt="hero image " className="w-full" />
+        <Image
+          src={hero}
+          alt="hero image "
+          className="w-full scale-90 rounded-lg md:scale-100"
+        />
       </div>
     </div>
   );
