@@ -29,7 +29,9 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          <Button>Get Your Ticket {TicketLogo}</Button>
+          <Button href="https://konfhub.com/checkout/kcdmumbai?ticketId=7350">
+            Get Your Ticket {TicketLogo}
+          </Button>
         </div>
       </div>
     </nav>
