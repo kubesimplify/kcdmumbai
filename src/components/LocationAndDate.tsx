@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Heading from './ui/Heading';
 import SectionWrapper from './ui/SectionWrapper';
-import building from '@assets/building.png';
+import hero from '@assets/hero.png';
 import hackathon from '@data/index';
 
 const LocationAndDate = () => {
@@ -12,11 +12,11 @@ const LocationAndDate = () => {
         <div className="md:w-1/2">
           <div className="mx-auto  flex flex-col items-center justify-center overflow-hidden rounded-xl shadow-xl lg:w-max">
             <Image
-              src={building}
+              src={hero}
               alt="building image"
               width={400}
               height={200}
-              className="rounded-t-xl"
+              className="rounded-t-xl object-cover"
             />
             <p className="bg-[#ffffff] py-1 font-semibold text-main-color ">
               Mumbai
