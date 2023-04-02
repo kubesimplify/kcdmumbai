@@ -20,7 +20,7 @@ const Speakers = () => {
             <Image
               src={person.imageUrl}
               alt="sponserImg"
-              className="mb-1 rounded-lg"
+              className="mb-1 h-[240px] w-[204px] rounded-lg object-cover"
               width={204}
               height={240}
             />
