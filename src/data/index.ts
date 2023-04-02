@@ -39,6 +39,13 @@ const hackathon = {
       profession: "Developer Advocate",
       company: 'Solo.io',
     },
+    {
+      id: 3,
+      name: "Divya Mohan",
+      imageUrl: "https://github.com/kubesimplify/kcdmumbai/blob/189558bac97a65547f813dfd6968d544777e860a/src/assets/divya.png",
+      profession: "Senior Technical Evangelist",
+      company: 'SUSE',
+    },
   ],
   sponsors: {
     platinum: [
