@@ -42,7 +42,7 @@ const hackathon = {
     {
       id: 3,
       name: "Divya Mohan",
-      imageUrl: "https://github.com/kubesimplify/kcdmumbai/blob/189558bac97a65547f813dfd6968d544777e860a/src/assets/divya.png",
+      imageUrl: "https://raw.githubusercontent.com/kubesimplify/kcdmumbai/main/src/assets/divya.png",
       profession: "Senior Technical Evangelist",
       company: 'SUSE',
     },
