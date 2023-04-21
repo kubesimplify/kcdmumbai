@@ -25,7 +25,7 @@ const Hero = () => {
           cloud native.
         </p>
         <Button
-          href="https://konfhub.com/checkout/kcdmumbai?ticketId=7350"
+          href="https://konfhub.com/checkout/kcdmumbai?ticketId=7351"
           className="w-max"
         >
           Get Your Ticket {TicketLogo}
