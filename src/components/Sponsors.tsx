@@ -14,7 +14,7 @@ const Sponsors = () => {
           to the community.
         </p>
         <p>
-          If you&apos;re interested in becoming a sponsor, contact us at
+          If you&apos;re interested in becoming a sponsor, contact us at{' '}
           <a href={`mailto:${hackathon.email}`}>{hackathon.email}</a>.
         </p>
       </div>
@@ -22,28 +22,44 @@ const Sponsors = () => {
         <Heading className="!text-lg">PLATINUM</Heading>
         <div className="flex items-center justify-center gap-5">
           {hackathon.sponsors.platinum.map((sponsor) => (
-            <SponserImage key={sponsor.id} sponsorLogo={sponsor.sponsorLogo} />
+            <SponserImage
+              key={sponsor.id}
+              type="platinum"
+              sponsorLogo={sponsor.sponsorLogo}
+            />
           ))}
         </div>
 
         <Heading className="!text-lg">GOLD</Heading>
         <div className="flex items-center justify-center gap-5">
           {hackathon.sponsors.gold.map((sponsor) => (
-            <SponserImage key={sponsor.id} sponsorLogo={sponsor.sponsorLogo} />
+            <SponserImage
+              key={sponsor.id}
+              sponsorLogo={sponsor.sponsorLogo}
+              type="gold"
+            />
           ))}
         </div>
 
         <Heading className="!text-lg">SILVER</Heading>
         <div className="flex items-center justify-center gap-5">
           {hackathon.sponsors.silver.map((sponsor) => (
-            <SponserImage key={sponsor.id} sponsorLogo={sponsor.sponsorLogo} />
+            <SponserImage
+              key={sponsor.id}
+              sponsorLogo={sponsor.sponsorLogo}
+              type="silver"
+            />
           ))}
         </div>
 
         <Heading className="!text-lg">BRONZE</Heading>
         <div className="flex items-center justify-center gap-5">
           {hackathon.sponsors.brozne.map((sponsor) => (
-            <SponserImage key={sponsor.id} sponsorLogo={sponsor.sponsorLogo} />
+            <SponserImage
+              key={sponsor.id}
+              sponsorLogo={sponsor.sponsorLogo}
+              type="bronze"
+            />
           ))}
         </div>
       </div>
@@ -55,9 +71,10 @@ export default Sponsors;
 
 type SponserImageProps = {
   sponsorLogo: string | JSX.Element | StaticImageData;
+  type: 'gold' | 'silver' | 'bronze' | 'platinum';
 };
 
-const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
+const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo, type }) => {
   if (!sponsorLogo) {
     return null; // return null if sponsorLogo is not defined
   }
@@ -66,7 +83,7 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
     return (
       <div
         className={`flex items-center justify-center ${
-          hackathon.blur.sponsors && 'blur-lg'
+          hackathon.blur.sponsors[type] && 'blur-lg'
         }`}
       >
         {sponsorLogo}
@@ -79,7 +96,7 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
     return (
       <div
         className={`flex items-center justify-center ${
-          hackathon.blur.sponsors && 'blur-lg'
+          hackathon.blur.sponsors[type] && 'blur-lg'
         }`}
       >
         <Image
@@ -87,8 +104,8 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo }) => {
           src={sponsorLogo}
           alt="sponserImg"
           className="rounded-lg object-cover"
-          width={110}
-          height={80}
+          width={170}
+          height={90}
         />
       </div>
     );
