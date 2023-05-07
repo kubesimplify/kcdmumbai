@@ -46,6 +46,13 @@ const hackathon = {
       profession: "Senior Technical Evangelist",
       company: 'SUSE',
     },
+    {
+      id: 3,
+      name: "Shivay Lamba",
+      imageUrl: "https://raw.githubusercontent.com/kubesimplify/kcdmumbai/main/src/assets/shivay.jpeg",
+      profession: null,
+      company: 'MEILISEARCH',
+    },
   ],
   sponsors: {
     platinum: [
