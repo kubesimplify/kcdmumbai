@@ -27,6 +27,7 @@ const hackathon = {
       gold: true,
       silver: true,
       bronze: true,
+      community: false,
     },
     speakers: false,
   },
@@ -89,6 +90,13 @@ const hackathon = {
       {
         id: 2,
         sponsorLogo: Adobe,
+      },
+    ],
+    community: [
+      {
+        id: 1,
+        sponsorLogo:
+          'https://learnk8s.io/a/f7e5160d4744cf05c46161170b5c11c9.svg',
       },
     ],
   },

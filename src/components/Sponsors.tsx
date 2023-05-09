@@ -62,6 +62,18 @@ const Sponsors = () => {
             />
           ))}
         </div>
+
+        <Heading className="!text-lg">Community</Heading>
+        <div className="flex items-center justify-center gap-5">
+          {hackathon.sponsors.community.map((sponsor) => (
+            <SponserImage
+              key={sponsor.id}
+              sponsorLogo={sponsor.sponsorLogo}
+              type="community"
+              size="sm"
+            />
+          ))}
+        </div>
       </div>
     </SectionWrapper>
   );
@@ -71,10 +83,15 @@ export default Sponsors;
 
 type SponserImageProps = {
   sponsorLogo: string | JSX.Element | StaticImageData;
-  type: 'gold' | 'silver' | 'bronze' | 'platinum';
+  type: 'gold' | 'silver' | 'bronze' | 'platinum' | 'community';
+  size?: 'sm' | 'md';
 };
 
-const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo, type }) => {
+const SponserImage: React.FC<SponserImageProps> = ({
+  sponsorLogo,
+  type,
+  size = 'md',
+}) => {
   if (!sponsorLogo) {
     return null; // return null if sponsorLogo is not defined
   }
@@ -104,7 +121,7 @@ const SponserImage: React.FC<SponserImageProps> = ({ sponsorLogo, type }) => {
           src={sponsorLogo}
           alt="sponserImg"
           className="rounded-lg object-cover"
-          width={170}
+          width={size === 'sm' ? 100 : 170}
           height={90}
         />
       </div>
