@@ -52,17 +52,6 @@ const Sponsors = () => {
           ))}
         </div>
 
-        <Heading className="!text-lg">BRONZE</Heading>
-        <div className="flex items-center justify-center gap-5">
-          {hackathon.sponsors.brozne.map((sponsor) => (
-            <SponserImage
-              key={sponsor.id}
-              sponsorLogo={sponsor.sponsorLogo}
-              type="bronze"
-            />
-          ))}
-        </div>
-
         <Heading className="!text-lg">Community</Heading>
         <div className="flex items-center justify-center gap-5">
           {hackathon.sponsors.community.map((sponsor) => (
@@ -83,7 +72,7 @@ export default Sponsors;
 
 type SponserImageProps = {
   sponsorLogo: string | JSX.Element | StaticImageData;
-  type: 'gold' | 'silver' | 'bronze' | 'platinum' | 'community';
+  type: 'gold' | 'silver' | 'platinum' | 'community';
   size?: 'sm' | 'md';
 };
 

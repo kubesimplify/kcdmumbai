@@ -2,8 +2,6 @@ import NR_Logo from '@assets/NR_logo_HZ_RGB.svg';
 import Amazon from '@assets/amzon.png';
 import Meta from '@assets/fb.png';
 import Microsoft from '@assets/microsoft.png';
-import Dell from '@assets/dell.png';
-import Adobe from '@assets/adobe.png';
 
 //! If anything you want to remove just set the value to null like this
 // date: 'March 25 - 26, 2023',
@@ -26,7 +24,6 @@ const hackathon = {
       platinum: false,
       gold: true,
       silver: true,
-      bronze: true,
       community: false,
     },
     speakers: false,
@@ -80,16 +77,6 @@ const hackathon = {
       {
         id: 2,
         sponsorLogo: Amazon,
-      },
-    ],
-    brozne: [
-      {
-        id: 1,
-        sponsorLogo: Dell,
-      },
-      {
-        id: 2,
-        sponsorLogo: Adobe,
       },
     ],
     community: [
