@@ -105,6 +105,11 @@ const hackathon = {
         sponsorLogo:
           'https://media.discordapp.net/attachments/1019118338774929468/1106268382543761520/chapter-badge-dark__1_.png',
       },
+      {
+        id: 6,
+        sponsorLogo:
+          'https://raw.githubusercontent.com/kubesimplify/branding/main/assets/png/icon/color.png',
+      },
     ],
   },
 };
