@@ -1,3 +1,4 @@
+import k8_logo from '@assets/k8_logo.png';
 import NR_Logo from '@assets/NR_logo_HZ_RGB.svg';
 import Amazon from '@assets/amzon.png';
 import Meta from '@assets/fb.png';
@@ -82,8 +83,27 @@ const hackathon = {
     community: [
       {
         id: 1,
+        sponsorLogo: k8_logo,
+      },
+      {
+        id: 2,
         sponsorLogo:
-          'https://learnk8s.io/a/f7e5160d4744cf05c46161170b5c11c9.svg',
+          'https://media.discordapp.net/attachments/1019118338774929468/1106268363585507429/chapter-badge-dark.png',
+      },
+      {
+        id: 3,
+        sponsorLogo:
+          'https://media.discordapp.net/attachments/1019118338774929468/1106268414466588702/cncf__3_.png',
+      },
+      {
+        id: 4,
+        sponsorLogo:
+          'https://media.discordapp.net/attachments/1019118338774929468/1106268398914121828/gdg_square_logo.png',
+      },
+      {
+        id: 5,
+        sponsorLogo:
+          'https://media.discordapp.net/attachments/1019118338774929468/1106268382543761520/chapter-badge-dark__1_.png',
       },
     ],
   },

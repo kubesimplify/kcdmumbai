@@ -89,7 +89,7 @@ const SponserImage: React.FC<SponserImageProps> = ({
     return (
       <div
         className={`flex items-center justify-center ${
-          hackathon.blur.sponsors[type] && 'blur-lg'
+          hackathon.blur.sponsors[type] ? 'blur-lg' : ''
         }`}
       >
         {sponsorLogo}
@@ -101,17 +101,20 @@ const SponserImage: React.FC<SponserImageProps> = ({
   ) {
     return (
       <div
-        className={`flex items-center justify-center ${
-          hackathon.blur.sponsors[type] && 'blur-lg'
+        className={`flex items-center h-[100px] justify-center ${
+          hackathon.blur.sponsors[type] ? 'blur-lg' : ''
         }`}
       >
         <Image
           // @ts-ignore
           src={sponsorLogo}
           alt="sponserImg"
-          className="rounded-lg object-cover"
+          className={`rounded-lg object-cover ${
+            type == 'community' ? 'h-full w-auto' : ''
+          }`}
           width={size === 'sm' ? 100 : 170}
           height={90}
+          unoptimized
         />
       </div>
     );
