@@ -20,7 +20,7 @@ const Sponsors = () => {
       </div>
       <div className="flex flex-col items-center justify-center gap-5">
         <Heading className="!text-lg">PLATINUM</Heading>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-5 flex-wrap">
           {hackathon.sponsors.platinum.map((sponsor) => (
             <SponserImage
               key={sponsor.id}
@@ -31,7 +31,7 @@ const Sponsors = () => {
         </div>
 
         <Heading className="!text-lg">GOLD</Heading>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-5 flex-wrap">
           {hackathon.sponsors.gold.map((sponsor) => (
             <SponserImage
               key={sponsor.id}
@@ -42,7 +42,7 @@ const Sponsors = () => {
         </div>
 
         <Heading className="!text-lg">SILVER</Heading>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-5 flex-wrap">
           {hackathon.sponsors.silver.map((sponsor) => (
             <SponserImage
               key={sponsor.id}
@@ -53,7 +53,7 @@ const Sponsors = () => {
         </div>
 
         <Heading className="!text-lg">Community</Heading>
-        <div className="flex items-center justify-center gap-5">
+        <div className="flex items-center justify-center gap-5 flex-wrap">
           {hackathon.sponsors.community.map((sponsor) => (
             <SponserImage
               key={sponsor.id}

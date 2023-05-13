@@ -1,8 +1,8 @@
 import k8_logo from '@assets/k8_logo.png';
 import NR_Logo from '@assets/NR_logo_HZ_RGB.svg';
-import Amazon from '@assets/amzon.png';
-import Meta from '@assets/fb.png';
-import Microsoft from '@assets/microsoft.png';
+import fermyon from '@assets/fermyon.svg';
+import vultr from '@assets/vultr.svg';
+import elastic from '@assets/elastic.svg';
 
 //! If anything you want to remove just set the value to null like this
 // date: 'March 25 - 26, 2023',
@@ -23,8 +23,8 @@ const hackathon = {
   blur: {
     sponsors: {
       platinum: false,
-      gold: true,
-      silver: true,
+      gold: false,
+      silver: false,
       community: false,
     },
     speakers: false,
@@ -67,17 +67,22 @@ const hackathon = {
     gold: [
       {
         id: 1,
-        sponsorLogo: Meta,
+        sponsorLogo:
+          'https://media.discordapp.net/attachments/1019118338774929468/1106921951022301226/civo-logo-colour-60cc1622dedf346f7afde1fff760523f731b0aac106a5465af98ff4073114b74.png',
       },
     ],
     silver: [
       {
         id: 1,
-        sponsorLogo: Microsoft,
+        sponsorLogo: elastic,
       },
       {
         id: 2,
-        sponsorLogo: Amazon,
+        sponsorLogo: fermyon,
+      },
+      {
+        id: 2,
+        sponsorLogo: vultr,
       },
     ],
     community: [
