@@ -81,7 +81,7 @@ const hackathon = {
         sponsorLogo: fermyon,
       },
       {
-        id: 2,
+        id: 3,
         sponsorLogo: vultr,
       },
     ],
@@ -113,7 +113,12 @@ const hackathon = {
       {
         id: 6,
         sponsorLogo:
-          'https://raw.githubusercontent.com/kubesimplify/branding/main/assets/png/icon/color.png',
+          'https://raw.githubusercontent.com/kubesimplify/branding/a3a54a9b1ae4fdd0a71c2f636fe882cbb09e8205/assets/svg/icon/color.svg',
+      },
+      {
+        id: 7,
+        sponsorLogo:
+          'https://raw.githubusercontent.com/rohitg00/DevOpsCommunity/main/assets/vector/default.svg',
       },
     ],
   },
