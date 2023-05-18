@@ -109,7 +109,7 @@ const SponserImage: React.FC<SponserImageProps> = ({
           // @ts-ignore
           src={sponsorLogo}
           alt="sponserImg"
-          className={`rounded-lg object-cover ${
+          className={`object-cover ${
             type == 'community' ? 'h-full w-auto' : ''
           }`}
           width={size === 'sm' ? 100 : 170}
