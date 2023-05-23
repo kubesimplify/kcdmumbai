@@ -70,6 +70,11 @@ const hackathon = {
         sponsorLogo:
           'https://media.discordapp.net/attachments/1019118338774929468/1106921951022301226/civo-logo-colour-60cc1622dedf346f7afde1fff760523f731b0aac106a5465af98ff4073114b74.png',
       },
+      {
+        id: 2,
+        sponsorLogo:
+          'https://media.discordapp.net/attachments/1019118338774929468/1110436642990346281/image.png?width=1440&height=194',
+      },
     ],
     silver: [
       {
