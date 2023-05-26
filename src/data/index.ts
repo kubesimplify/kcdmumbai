@@ -3,7 +3,7 @@ import NR_Logo from '@assets/NR_logo_HZ_RGB.svg';
 import fermyon from '@assets/fermyon.svg';
 import vultr from '@assets/vultr.svg';
 import elastic from '@assets/elastic.svg';
-
+import f5 from '@assets/f5-logo-rgb.svg';
 //! If anything you want to remove just set the value to null like this
 // date: 'March 25 - 26, 2023',
 // date: null,
@@ -88,6 +88,10 @@ const hackathon = {
       {
         id: 3,
         sponsorLogo: vultr,
+      },
+      {
+        id: 4,
+        sponsorLogo: f5,
       },
     ],
     community: [

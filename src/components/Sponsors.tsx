@@ -48,6 +48,7 @@ const Sponsors = () => {
               key={sponsor.id}
               sponsorLogo={sponsor.sponsorLogo}
               type="silver"
+              size={sponsor.id == 4 ? 60 : 170}
             />
           ))}
         </div>
@@ -59,7 +60,7 @@ const Sponsors = () => {
               key={sponsor.id}
               sponsorLogo={sponsor.sponsorLogo}
               type="community"
-              size="sm"
+              size={100}
             />
           ))}
         </div>
@@ -73,13 +74,13 @@ export default Sponsors;
 type SponserImageProps = {
   sponsorLogo: string | JSX.Element | StaticImageData;
   type: 'gold' | 'silver' | 'platinum' | 'community';
-  size?: 'sm' | 'md';
+  size?: number;
 };
 
 const SponserImage: React.FC<SponserImageProps> = ({
   sponsorLogo,
   type,
-  size = 'md',
+  size = 170,
 }) => {
   if (!sponsorLogo) {
     return null; // return null if sponsorLogo is not defined
@@ -112,7 +113,7 @@ const SponserImage: React.FC<SponserImageProps> = ({
           className={`object-cover ${
             type == 'community' ? 'h-full w-auto' : ''
           }`}
-          width={size === 'sm' ? 100 : 170}
+          width={size}
           height={90}
           unoptimized
         />
