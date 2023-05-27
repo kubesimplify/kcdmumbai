@@ -9,7 +9,7 @@ const Agenda = () => {
     <SectionWrapper className="mx-3 items-center justify-center" id="agenda">
       <Heading>Agenda</Heading>
       <h1 className="text-lg font-semibold">June 17</h1>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 ">
         {agenda.map((item) => (
           <Card
             key={item.id}
@@ -44,13 +44,15 @@ function Card({
   endTime: string;
 }) {
   return (
-    <div className="w-full space-y-5 rounded-lg border border-black p-4">
+    <div className=" xs:w-full w-[300px] space-y-5 rounded-lg border border-black p-4">
       <p>
         {moment(startTime).format('hh:mm A')} --{' '}
         {moment(endTime).format('hh:mm A')}
       </p>
       {title ? <h1 className="text-lg font-semibold">{title}</h1> : null}{' '}
-      {description ? <p className="text-sm">{description}</p> : null}
+      {description ? (
+        <p className="break-words text-justify text-sm">{description}</p>
+      ) : null}
       {badge ? <Badge label={badge} /> : null}
       <Badge label="In Person" />
       <div className="flex flex-wrap items-start justify-start gap-5">
