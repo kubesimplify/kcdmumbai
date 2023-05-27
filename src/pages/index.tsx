@@ -5,6 +5,7 @@ import LocationAndDate from '@components/LocationAndDate';
 import Speakers from '@components/Speakers';
 import PropsalAndSponsors from '@components/PropsalAndSponser';
 import Sponsors from '@components/Sponsors';
+import Agenda from '@components/Agenda';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Speakers />
         <PropsalAndSponsors />
         <Sponsors />
+        <Agenda />
       </main>
     </>
   );
