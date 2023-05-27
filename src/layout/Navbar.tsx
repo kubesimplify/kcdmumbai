@@ -42,7 +42,7 @@ export default Navbar;
 
 const nav = [
   { id: 1, name: 'About', href: '#about' },
-  { id: 2, name: 'CFP', href: '#cfp' },
   { id: 3, name: 'Sponsors', href: '#sponsors' },
+  { id: 2, name: 'Agenda', href: '#agenda' },
   { id: 4, name: 'Contact', href: '#contact' },
 ];
