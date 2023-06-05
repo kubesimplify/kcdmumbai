@@ -1422,7 +1422,7 @@ export const agenda = [
     track: 522,
     start_time: '2023-06-17T15:00:00+05:30',
     end_time: '2023-06-17T15:30:00+05:30',
-    title: 'Why Kubernetes sucks at efficient backups',
+    title: 'Incremental Backups in Kubernetes: Where We Stand and What is Missing',
     description:
       'As Kubernetes adoption matures, a recent CNCF.io study showed that stateful workloads have grown to over 40% of deployments. Operating persistence and storage on a cluster for the stateful applications in Kubernetes has always been challenging, especially when it comes to backup and disaster recovery. The traditional backup strategies are not sufficient considering the dynamic nature of containers and distributed architecture.   In this talk, Prasad will talk about different strategies used to protect Kubernetes stateful application data and compare their pros and cons. We will also throw light on the missing piece in Kubernetes architecture to perform incremental backups i.e. changed block tracking. And ongoing efforts by Data Protection Working Group to add the changed block tracking capability to Kubernetes with KEP-3314 to make the backups more efficient and quicker.',
     type: 'talk',
