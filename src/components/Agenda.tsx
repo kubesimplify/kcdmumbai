@@ -44,7 +44,7 @@ function Card({
   endTime: string;
 }) {
   return (
-    <div className=" sm:w-full w-[300px] space-y-5 rounded-lg border border-black p-4">
+    <div className="w-[300px] space-y-5 rounded-lg border border-black p-4 xs:w-full">
       <p>
         {moment(startTime).format('hh:mm A')} --{' '}
         {moment(endTime).format('hh:mm A')}

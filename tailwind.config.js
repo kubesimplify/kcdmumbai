@@ -7,6 +7,7 @@ module.exports = {
         'main-color': '#00002C',
       },
       screens: {
+        xs: '500px',
         md: '750px',
       },
     },
