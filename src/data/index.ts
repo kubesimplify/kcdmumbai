@@ -866,23 +866,24 @@ export const agenda = [
     sponsors: [],
     people: [
       {
-        id: 2725,
-        first_name: 'Zameer',
-        last_name: 'Fouzan',
+        id: 2549,
+        first_name: 'Steve',
+        last_name: 'Ng',
         company: 'New Relic',
-        title: 'Senior Developer Relations Engineer',
-        bio: '',
+        title:
+          'Head of Developer Relations APJ at New Relic - Advocacy | Platform | Ecosystem',
+        bio: '<p><a href="https://www.linkedin.com/in/sng08/"><span>https://www.linkedin.com/in/sng08/</span></a> </p>',
         picture: {
-          url: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-cncf/events/Headshot_public.jpg',
-          path: 'events/Headshot_public.jpg',
+          url: 'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-cncf/events/steve.jpeg',
+          path: 'events/steve.jpeg',
           thumbnail_width: 400,
           thumbnail_height: 400,
           thumbnail_format: 'auto',
           thumbnail_url:
-            'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_face,h_400,q_auto:good,w_400/v1/gcs/platform-data-cncf/events/Headshot_public.jpg',
+            'https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_face,h_400,q_auto:good,w_400/v1/gcs/platform-data-cncf/events/steve.jpeg',
         },
-        personal_twitter: 'zmrfzn',
-        company_twitter: 'newrelic',
+        personal_twitter: '',
+        company_twitter: '',
       },
     ],
     cta_message:
@@ -1788,4 +1789,5 @@ export const agenda = [
     audience_type: 'IN_PERSON',
   },
 ];
+
 export default hackathon;
