@@ -135,6 +135,35 @@ const hackathon = {
 
 export const agenda = [
   {
+    id: 2504,
+    uuid: '243448bd-2ba0-4dbc-a573-aebf68cc487f',
+    event: 6328,
+    place: {
+      id: 212,
+      event: 6328,
+      title: 'Main',
+      description: null,
+      stream_provider: 'bevy',
+    },
+    track: 516,
+    start_time: '2023-06-17T08:00:00+05:30',
+    end_time: '2023-06-17T09:00:00+05:30',
+    title: 'Registration & Booth Crawl',
+    description: null,
+    type: 'talk',
+    visible_to: [],
+    max_capacity: 0,
+    sponsors: [],
+    people: [],
+    cta_message:
+      '[{"children": [{"type": "line", "children": [{"text": ""}]}]}]',
+    cta_button_text: '',
+    cta_url: '',
+    order: 6,
+    deleted_at: null,
+    audience_type: 'IN_PERSON',
+  },
+  {
     id: 2303,
     uuid: 'c78bb46a-7aff-4c2b-a5d1-a7110b7c3f26',
     event: 6328,
