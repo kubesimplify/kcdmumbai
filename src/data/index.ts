@@ -434,7 +434,7 @@ export const agenda = [
     },
     track: 523,
     start_time: '2023-06-17T10:25:00+05:30',
-    end_time: '2023-06-17T10:55:00+05:30',
+    end_time: '2023-06-17T11:55:00+05:30',
     title: 'Istio Service Mesh - Day 0 to Day 2 Operations',
     description:
       'Microservices can be complicated and difficult to manage, and a service mesh is a popular solution for many of those complexities. You will be given a quick fly-over of what challenges service mesh solves, service mesh architecture, and various service mesh projects in the ecosystem.\n\nThis workshop explains how to get started with Istio by incrementally adopting Istio and observing the benefits that Istio service mesh brings to you. We will explore various functions and benefits that Istio provides to your organization.\n\nSome of the topics that we will cover in this workshop include:\n- Install Istio\n- Secure services with Istio Ingress Gateway\n- Add services to the mesh\n- Secure inter-service communication with Istio\n- Control traffic\n\nThis workshop also includes a certification option. This credential, offered by Solo.io with Credly, certifies that you possess introductory skills. At the completion of the workshop, you will be able to take an assessment and a score 80% or higher earns the certification',
