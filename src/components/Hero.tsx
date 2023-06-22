@@ -24,12 +24,12 @@ const Hero = () => {
           of a diverse community coming together to learn & share knowledge on
           cloud native.
         </p>
-        <Button
+        {/* <Button
           href="https://konfhub.com/checkout/kcdmumbai?ticketId=7352"
           className="w-max"
         >
           Get Your Ticket {TicketLogo}
-        </Button>
+        </Button> */}
       </div>
       <div className="md:w-1/2">
         <Image

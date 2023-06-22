@@ -7,7 +7,7 @@ import { TicketLogo } from '@assets/icon';
 const Navbar = () => {
   return (
     <nav className="flex h-20 w-full items-center tracking-wider">
-      <div className="mx-4 flex w-full max-w-6xl items-center justify-between font-extrabold text-main-color sm:mx-8 md:mx-auto md:justify-between lg:justify-around lg:px-0">
+      <div className="mx-4 flex w-full max-w-6xl items-center justify-between font-extrabold text-main-color sm:mx-8 md:mx-auto md:justify-between lg:justify-between lg:px-0">
         <Link
           href="/"
           className="flex items-center justify-center gap-2 tracking-normal"
@@ -28,11 +28,11 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <div>
-          <Button href="https://konfhub.com/checkout/kcdmumbai?ticketId=7352">
+        {/* <div> */}
+        {/* <Button href="https://konfhub.com/checkout/kcdmumbai?ticketId=7352">
             Get Your Ticket {TicketLogo}
-          </Button>
-        </div>
+          </Button> */}
+        {/* </div> */}
       </div>
     </nav>
   );
