@@ -6,6 +6,7 @@ import Speakers from '@components/Speakers';
 import PropsalAndSponsors from '@components/PropsalAndSponser';
 import Sponsors from '@components/Sponsors';
 import Agenda from '@components/Agenda';
+import Layout from '@layout/index';
 
 export default function Home() {
   return (
@@ -25,15 +26,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="mx-auto mb-2 flex max-w-6xl flex-col gap-4 px-2">
-        <Hero />
-        <Aboutus />
-        <LocationAndDate />
-        <Speakers />
-        <PropsalAndSponsors />
-        <Sponsors />
-        <Agenda />
-      </main>
+      <Layout>
+        <main className="mx-auto mb-2 flex max-w-6xl flex-col gap-4 px-2">
+          <Hero />
+          <Aboutus />
+          <LocationAndDate />
+          <Speakers />
+          <PropsalAndSponsors />
+          <Sponsors />
+          <Agenda />
+        </main>
+      </Layout>
     </>
   );
 }

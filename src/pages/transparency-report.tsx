@@ -1,24 +1,19 @@
 import Head from 'next/head';
-import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 type Props = {};
 
 const TransparancyReport = (props: Props) => {
+  const router = useRouter();
+  useEffect(() => {
+    router.replace('/transparency-report.pdf');
+  }, []);
   return (
     <>
       <Head>
         <title>Transparency Report</title>
       </Head>
-      <main>
-        <div>
-          <embed
-            src="/transparency-report.pdf"
-            style={{ width: '100%', height: '100%', border: 'none' }}
-          />
-        </div>
-        <Link href="/transparency-report.pdf">report</Link>
-      </main>
     </>
   );
 };
