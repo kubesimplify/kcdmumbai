@@ -1,16 +1,13 @@
-import Head from 'next/head';
-import Hero from '@components/Hero';
 import Aboutus from '@components/About';
+import Hero from '@components/Hero';
 import LocationAndDate from '@components/LocationAndDate';
 import Speakers from '@components/Speakers';
-import PropsalAndSponsors from '@components/PropsalAndSponser';
 import Sponsors from '@components/Sponsors';
-import Agenda from '@components/Agenda';
-import Layout from '@layout/index';
+import Heading from '@components/ui/Heading';
 import SectionWrapper from '@components/ui/SectionWrapper';
-import { Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import { Worker } from '@react-pdf-viewer/core';
+import { videos } from '@data/index';
+import Layout from '@layout/index';
+import Head from 'next/head';
 
 export default function Home() {
   return (
@@ -43,20 +40,48 @@ export default function Home() {
           <LocationAndDate />
           <Speakers />
           {/* <PropsalAndSponsors /> */}
-          <SectionWrapper id="#transparency-report" className="mx-3 w-full">
-            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.8.162/build/pdf.worker.min.js">
-              <div
-                style={{
-                  border: '1px solid rgba(0, 0, 0, 0.3)',
-                  height: '750px',
-                }}
-              >
-                <Viewer fileUrl="/transparency-report.pdf" />
-              </div>
-            </Worker>
+
+          {/* PDF  */}
+          <SectionWrapper
+            id="#transparency-report"
+            className="mx-3 h-[900px] w-full"
+          >
+            <object
+              data="/transparency-report.pdf"
+              type="application/pdf"
+              width="100%"
+              height="100%"
+            >
+              <p>
+                Alternative text - include a link{' '}
+                <a href="http://africau.edu/images/default/sample.pdf">
+                  to the PDF!
+                </a>
+              </p>
+            </object>
           </SectionWrapper>
+
           <Sponsors />
-          <Agenda />
+
+          {/* Recording  */}
+          <SectionWrapper id="#recordings" className="pb-10">
+            <Heading>Recordings</Heading>
+            <div className="flex w-full flex-wrap items-center justify-center gap-10">
+              {videos.map((video) => (
+                <iframe
+                  key={video}
+                  width="340"
+                  height="200"
+                  src={video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              ))}
+            </div>
+          </SectionWrapper>
+          {/* <Agenda /> */}
         </main>
       </Layout>
     </>

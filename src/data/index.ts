@@ -8,6 +8,18 @@ import f5 from '@assets/f5-logo-rgb.svg';
 // date: 'March 25 - 26, 2023',
 // date: null,
 
+export const videos = [
+  'https://www.youtube.com/embed/videoseries?list=PLj6h78yzYM2N08ypu0erG20TXjlCjNFer',
+  'https://www.youtube.com/embed/HB0U3yJYbp0',
+  'https://www.youtube.com/embed/Qig50m0_EyE',
+  'https://www.youtube.com/embed/5_dwKZ88G8w',
+  'https://www.youtube.com/embed/Ck-xj1U5kiw',
+  'https://www.youtube.com/embed/BMnFERlfjdw',
+  'https://www.youtube.com/embed/xm6FbmA8YbA',
+  'https://www.youtube.com/embed/tVy8D8LbcEU',
+  'https://www.youtube.com/embed/yzusY4xsf6g',
+];
+
 const hackathon = {
   socials: {
     twitter: 'https://twitter.com/kcdmumbai',

@@ -29,7 +29,7 @@ const Navbar = () => {
           ))}
         </div>
         <div>
-          <Button>Coming Soon</Button>
+          <Button>Coming Soon 2024</Button>
         </div>
       </div>
     </nav>
