@@ -18,6 +18,22 @@ export const videos = [
   'https://www.youtube.com/embed/xm6FbmA8YbA',
   'https://www.youtube.com/embed/tVy8D8LbcEU',
   'https://www.youtube.com/embed/yzusY4xsf6g',
+  'https://www.youtube.com/embed/v56kZvm7ang',
+  'https://www.youtube.com/embed/fU3iE3X1tIc',
+  'https://www.youtube.com/embed/mNylgrwBbJA',
+  'https://www.youtube.com/embed/wt-LLO5cc5A',
+  'https://www.youtube.com/embed/EqxBvMbLpyQ',
+  'https://www.youtube.com/embed/b8heUlKOooQ',
+  'https://www.youtube.com/embed/g0zIFJSydsg',
+  'https://www.youtube.com/embed/HRbzNEllWUw',
+  'https://www.youtube.com/embed/8qOt_gYjwcw',
+  'https://www.youtube.com/embed/46BJKX0q854',
+  'https://www.youtube.com/embed/4P5C7c8KSIM',
+  'https://www.youtube.com/embed/wCY34P5ghwA',
+  'https://www.youtube.com/embed/h3KqxhM5QCU',
+  'https://www.youtube.com/embed/4pxiujTId5M',
+  'https://www.youtube.com/embed/0RuFGTWc-F0',
+  'https://www.youtube.com/embed/PbPLl5_hN_U',
 ];
 
 const hackathon = {
