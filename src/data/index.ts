@@ -16,8 +16,8 @@ const hackathon = {
     slack: null,
   },
   email: 'contact@kcdmumbai.com',
-  location: 'Mumbai',
-  date: 'June 17th, 2023',
+  location: null,
+  date: null,
   aboutUs:
     'Join us at Kubernetes Community Days in Mumbai to experience the power of a diverse community coming together to learn & share knowledge on cloud native.',
   blur: {

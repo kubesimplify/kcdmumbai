@@ -7,6 +7,10 @@ import PropsalAndSponsors from '@components/PropsalAndSponser';
 import Sponsors from '@components/Sponsors';
 import Agenda from '@components/Agenda';
 import Layout from '@layout/index';
+import SectionWrapper from '@components/ui/SectionWrapper';
+import { Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import { Worker } from '@react-pdf-viewer/core';
 
 export default function Home() {
   return (
@@ -26,13 +30,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Layout>
         <main className="mx-auto mb-2 flex max-w-6xl flex-col gap-4 px-2">
+          <div className="py-10">
+            <h3 className="text-center text-2xl text-red-500 underline">
+              Thank you for joining KCD Mumbai 2023 Edition
+            </h3>
+          </div>
           <Hero />
           <Aboutus />
           <LocationAndDate />
           <Speakers />
-          <PropsalAndSponsors />
+          {/* <PropsalAndSponsors /> */}
+          <SectionWrapper id="#transparency-report" className="mx-3 w-full">
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.8.162/build/pdf.worker.min.js">
+              <div
+                style={{
+                  border: '1px solid rgba(0, 0, 0, 0.3)',
+                  height: '750px',
+                }}
+              >
+                <Viewer fileUrl="/transparency-report.pdf" />
+              </div>
+            </Worker>
+          </SectionWrapper>
           <Sponsors />
           <Agenda />
         </main>

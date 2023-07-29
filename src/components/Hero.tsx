@@ -9,11 +9,14 @@ const Hero = () => {
   return (
     <div className="mx-3 flex flex-col gap-3 pt-5 md:flex-row md:pt-28">
       <div className="flex flex-col gap-5 md:w-1/2">
-        <p className="-ml-2 w-max whitespace-nowrap rounded-lg bg-main-color p-2 text-white sm:ml-0">
-          {hackathon?.date}
-          {'  |  '}
-          {hackathon?.location}
-        </p>
+        {hackathon?.date ||
+          (hackathon?.location && (
+            <p className="-ml-2 w-max whitespace-nowrap rounded-lg bg-main-color p-2 text-white sm:ml-0">
+              {hackathon?.date}
+              {hackathon?.date && hackathon?.location && '  |  '}
+              {hackathon?.location}
+            </p>
+          ))}
         <h1 className="text-5xl font-extrabold leading-[3.5rem] text-main-color">
           Kubernetes <br />
           Community <br />
